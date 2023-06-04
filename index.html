@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online food order restaurant</title>
+    <link rel="stylesheet" href="./syle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&family=Raleway:ital,wght@0,600;0,700;0,800;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- header section-->
+
+    <header class="sticky">
+        <a href="#" class="logo">FOODISH</span> </a>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        
+    </header>
+
+    <!-- home section -->
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1><span>Eat Right Food</span> Eat Healty, it is good for our health.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam itaque nam excepturi ea nulla harum autem sunt, 
+                velit vero tenetur magnam sit quisquam eum! Vel totam eius vitae vero nesciunt.</p>
+            <a href="#container-box" class="btn">Special Menu</a>
+        </div>
+
+        <div class="about-img">
+            <img src="https://i.postimg.cc/mgpwzmx9/about-photo.jpg" alt="food" />
+        </div>
+    </section>
+
+    <!-- container section -->
+    <section class="container">
+        <div class="buttons">
+            <div><button onclick="randomBurgers()"> Choose your Favoriat</button></div>
+            <div><button onclick="placeOrder()">Place Order</button></div>
+        </div>
+        
+        <div class="main-text">
+            <h2 style="text-align: center;" id="menu"> MENU</h2>
+        </div>
+        
+        <div class="container-box" id="container-box">
+        </div>
+        </div>
+    </section>
+
+    
+    <div class="model-container">
+        <div class="model">
+            <i class='bx bxs-heart'></i>
+            <h3>Order status</h3>
+            <p id="status"></p>
+            <button id="pay-button" onclick="payment()"></button>
+            <button id="cancel" onclick="closePopup()" ondblclick=" thankyouFnc()">cancel</button>
+            <i class='bx bx-x' onclick="closePopup()"></i>
+        </div>
+
+    </div>
+    <script src="./script.js">
+      
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
